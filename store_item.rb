@@ -15,6 +15,10 @@ class Item
   def print_info
     puts " Name: #{@name} \n Color: #{@color} \n Price: #{@price}"
   end
+
+  def sale_price
+    @price = @price * 0.8
+  end
 end
 
 item1 = Item.new(name: "Regency Evening Gown", color: "Mazarine Blue", price: 465)
@@ -24,3 +28,6 @@ item3 = Item.new(name: "Regency Mourning Gown", color: "Onyx Black", price: 325)
 item1.print_info
 item2.print_info
 item3.print_info
+
+item2.sale_price
+item2.print_info
