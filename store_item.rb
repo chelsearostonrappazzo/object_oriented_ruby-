@@ -20,3 +20,7 @@ end
 item1 = Item.new("regency evening gown", "mazarine blue", 465)
 item2 = Item.new("regency promenade gown", "sprigged muslin", 200)
 item3 = Item.new("regency mourning gown", "onyx black", 325)
+
+item1.print_info
+item2.print_info
+item3.print_info
