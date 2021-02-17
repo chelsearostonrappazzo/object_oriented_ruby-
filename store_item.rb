@@ -8,4 +8,16 @@ class Item
     @color = input_color
     @price = input_price
   end
+
+  def name
+    @name
+  end
+
+  def color
+    @color
+  end
+
+  def price
+    @price
+  end
 end
