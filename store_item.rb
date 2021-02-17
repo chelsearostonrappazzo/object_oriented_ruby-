@@ -13,7 +13,7 @@ class Item
   end
 
   def print_info
-    puts "Name: #{@name} \n Color: #{@color} \n Price: #{@price}"
+    puts " Name: #{@name} \n Color: #{@color} \n Price: #{@price}"
   end
 end
 
