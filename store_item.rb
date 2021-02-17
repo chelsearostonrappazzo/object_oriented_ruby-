@@ -6,10 +6,10 @@ class Item
   attr_reader :name, :color, :price
   attr_writer :price
 
-  def initialize(input_name, input_color, input_price)
-    @name = input_name
-    @color = input_color
-    @price = input_price
+  def initialize(input_options)
+    @name = input_options[:name]
+    @color = input_options[:color]
+    @price = input_options[:price]
   end
 
   def print_info
@@ -17,9 +17,9 @@ class Item
   end
 end
 
-item1 = Item.new("regency evening gown", "mazarine blue", 465)
-item2 = Item.new("regency promenade gown", "sprigged muslin", 200)
-item3 = Item.new("regency mourning gown", "onyx black", 325)
+item1 = Item.new(name: "Regency Evening Gown", color: "Mazarine Blue", price: 465)
+item2 = Item.new(name: "Regency Promenade Gown", color: "Sprigged Muslin", price: 200)
+item3 = Item.new(name: "Regency Mourning Gown", color: "Onyx Black", price: 325)
 
 item1.print_info
 item2.print_info
